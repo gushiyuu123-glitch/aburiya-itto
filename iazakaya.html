@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- =========================
+      基本SEO
+========================= -->
+<title>炙屋 一灯 | 炙り料理と静かな灯りの和食店</title>
+
+<meta name="description"
+  content="炙屋 一灯（あぶりや いっとう）。湯気と灯りに包まれる和食店。炙り料理・刺身・酒肴・炭火の一品。カウンター8席、テーブル16席。予約可。">
+
+<meta name="keywords" content="居酒屋, 和食, 炙り料理, 炭火焼き, 刺身, 落ち着いた居酒屋, デート, カウンター, 東京 居酒屋, 一灯">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourdomain.com/">
+
+<!-- SNS用 OGP（画像は後で最適なOGP作る） -->
+<meta property="og:title" content="炙屋 一灯 | 炙り料理と静かな灯りの和食店">
+<meta property="og:description" content="炙りの香りと、静かな灯り。炙屋 一灯の公式サイト。お品書き・店内写真・予約はこちら。">
+<meta property="og:image" content="https://yourdomain.com/ogp.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="炙屋 一灯">
+<meta property="og:locale" content="ja_JP">
+<!-- Standard Favicons -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon_48x48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon_96x96.png">
+<link rel="icon" type="image/png" sizes="180x180" href="/favicon_180x180.png">
+
+<!-- Android / Chrome -->
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon_512x512.png">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_180x180.png">
+
+<!-- Windows / IE -->
+<meta name="msapplication-TileColor" content="#121212">
+<meta name="msapplication-TileImage" content="/favicon_180x180.png">
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#121212">
+
+<!-- X（旧Twitter）カード -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="炙屋 一灯 | 炙り料理と静かな灯りの和食店">
+<meta name="twitter:description"
+  content="炙りの香りと、静かな灯り。炙屋 一灯の公式サイト。お品書き・店内写真・予約はこちら。">
+<meta name="twitter:image" content="https://yourdomain.com/ogp.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Cormorant+Garamond:wght@600;700&display=swap"
+    rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "炙屋 一灯",
+  "image": "https://yourdomain.com/ogp.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "東京都〇〇区〇〇 1-2-3",
+    "addressRegion": "Tokyo",
+    "postalCode": "000-0000",
+    "addressCountry": "JP"
+  },
+  "telephone": "000-000-0000",
+  "servesCuisine": ["和食", "炙り料理", "刺身", "酒肴"],
+  "priceRange": "¥¥",
+  "url": "https://yourdomain.com/",
+  "openingHours": "Mo-Sa 17:00-24:00"
+}
+</script>
+
+  <style>
+    /* =========================================
+       Design Tokens
+    ========================================= */
+    :root {
+      --ink: #f7f3e9;
+      --ink-soft: #e9e4d9;
+      --bg: #121212;
+      --bg-2: #1a1a1a;
+      --gold: #d4af37;
+      --gold-2: #b38628;
+      --ember: #b24c28;
+      --line: rgba(212, 175, 55, .28);
+      --shadow-soft: 0 18px 40px rgba(0, 0, 0, .35);
+      --radius: 14px;
+      --maxw: 1120px;
+    }
+
+    /* =========================================
+       Base
+    ========================================= */
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 800px at 70% -10%, rgba(212, 175, 55, .08), transparent 60%),
+        var(--bg);
+      font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--maxw));
+      margin-inline: auto;
+    }
+
+    section {
+      scroll-margin-top: 76px;
+    }
+
+    .hr-glow {
+      height: 1px;
+      width: 100%;
+      border: none;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      opacity: .35;
+      margin: 24px 0;
+    }
+
+    /* =========================================
+       Header / Nav
+    ========================================= */
+    header {
+      position: fixed;
+      inset-inline: 0;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      background:
+        linear-gradient(180deg,
+          rgba(18, 18, 18, .92),
+          rgba(18, 18, 18, .35),
+          transparent);
+      border-bottom: 1px solid rgba(212, 175, 55, .12);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 700;
+      letter-spacing: .18em;
+      font-size: clamp(18px, 2.4vw, 24px);
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .brand-mark small {
+      font-size: .72em;
+      letter-spacing: .28em;
+      opacity: .8;
+    }
+
+    nav ul {
+      display: flex;
+      gap: min(5vw, 28px);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      display: inline-block;
+      padding-top: 14px;
+      opacity: .9;
+      transition: all 0.25s ease;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      text-shadow: 0 0 16px rgba(212, 175, 55, .25);
+    }
+
+    /* ハンバーガー */
+    .nav-toggle {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 175, 55, .5);
+      background: rgba(0, 0, 0, .4);
+      color: var(--ink);
+      font-size: 13px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .nav-toggle span.icon {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .nav-mobile {
+      display: none;
+      position: fixed;
+      top: 58px;
+      left: 0;
+      right: 0;
+      padding: 10px 18px 16px;
+      background:
+        linear-gradient(180deg,
+          rgba(10, 10, 10, .96),
+          rgba(10, 10, 10, .92));
+      border-bottom: 1px solid rgba(212, 175, 55, .22);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, .6);
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      transform: translateY(-12px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform .35s ease, opacity .35s ease;
+      z-index: 900;
+    }
+
+    .nav-mobile a {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+      font-size: 14px;
+      letter-spacing: .16em;
+    }
+
+    .nav-mobile a:last-child {
+      border-bottom: none;
+    }
+
+    .nav-mobile.open {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    body.nav-open {
+      overflow: hidden;
+    }
+
+    /* =========================================
+       Buttons
+    ========================================= */
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn .shine {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(110deg, transparent 10%, rgba(212, 175, 55, .20) 40%, transparent 70%);
+      transform: translateX(-120%);
+      transition: transform .8s ease;
+    }
+
+    .btn:hover .shine {
+      transform: translateX(120%);
+    }
+
+    .btn--gold {
+      border-color: var(--gold);
+    }
+
+    .btn--ghost {
+      color: var(--ink-soft);
+      border-color: rgba(255, 255, 255, .18);
+    }
+
+    /* =========================================
+       Hero（左寄せ／外観写真）
+    ========================================= */
+
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+      margin-top: 80px;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      opacity: 1;
+      background:
+        radial-gradient(900px 700px at 68% 35%, rgba(178, 76, 40, 0.12), transparent 60%),
+        linear-gradient(180deg, rgba(10, 6, 3, 0.4), rgba(0, 0, 0, 0.20)),
+        url("hero-izakaya.png") center center / cover no-repeat;
+      filter: brightness(1.10) contrast(1.03);
+    }
+
+    /* 左側テキスト用の暗めグラデ */
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+          115deg,
+          rgba(0, 0, 0, 0.62) 0%,
+          rgba(0, 0, 0, 0.48) 24%,
+          rgba(0, 0, 0, 0.32) 38%,
+          rgba(0, 0, 0, 0.14) 55%,
+          rgba(0, 0, 0, 0.00) 78%
+        );
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 3;
+      width: min(92%, var(--maxw));
+      margin-inline: auto;
+      text-align: left;
+      padding-left: clamp(4%, 9vw, 10%);
+      max-width: 720px;
+    }
+
+    .hero-logo {
+      margin-top: 0;
+      padding: clamp(10px, 2.8vw, 22px) 0;
+    }
+
+    .logo-ja {
+      font-size: clamp(38px, 5.8vw, 62px);
+      letter-spacing: .22em;
+      font-weight: 700;
+      text-shadow:
+        0 12px 40px rgba(0, 0, 0, .75),
+        0 0 24px rgba(0, 0, 0, .9);
+    }
+
+    .logo-en {
+      font-family: "Cormorant Garamond", serif;
+      letter-spacing: .32em;
+      opacity: .9;
+      font-size: clamp(12px, 1.4vw, 16px);
+      margin-top: 6px;
+    }
+
+    .hero-copy {
+      margin-top: 14px;
+      opacity: .9;
+      font-size: clamp(14px, 2.1vw, 18px);
+      max-width: 28em;
+    }
+
+    .hero-cta {
+      margin-top: 28px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-cta .btn.btn--ghost {
+      border-color: var(--gold);
+      color: var(--ink);
+    }
+
+    .hero-cta .btn.btn--ghost:hover {
+      background: rgba(212, 175, 55, 0.12);
+    }
+
+    /* Sparks */
+    .sparks {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .spark {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(212, 175, 55, .9), rgba(212, 175, 55, .2));
+      filter: blur(.4px);
+      animation: floatUp var(--dur) linear infinite;
+      left: var(--x);
+      bottom: -10px;
+      opacity: .75;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(.9);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: .9;
+      }
+
+      100% {
+        transform: translateY(-100vh) scale(1.1);
+        opacity: 0;
+      }
+    }
+
+    /* =========================================
+       Sections
+    ========================================= */
+    .section {
+      padding: clamp(60px, 8vw, 96px) 0;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: clamp(22px, 3.4vw, 30px);
+      margin: 0 0 16px;
+      letter-spacing: .18em;
+    }
+
+    .lead {
+      color: var(--ink-soft);
+      opacity: .95;
+    }
+
+    /* Concept */
+    .concept {
+      background:
+        radial-gradient(1000px 500px at 40% 40%, rgba(178, 76, 40, .12), transparent 70%),
+        linear-gradient(180deg, var(--bg-2), var(--bg));
+      border-top: 1px solid rgba(255, 255, 255, .05);
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+    }
+
+    .concept-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+    }
+
+    .concept-grid::before {
+      content: "";
+      position: absolute;
+      top: 16%;
+      bottom: 18%;
+      left: 50%;
+      width: 1px;
+      background: linear-gradient(180deg,
+          transparent,
+          rgba(212, 175, 55, .32),
+          transparent);
+      z-index: 0;
+      opacity: 0.7;
+    }
+
+    .concept-card {
+      background: #0f0f0f;
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: var(--radius);
+      padding: clamp(24px, 3vw, 40px);
+      box-shadow: var(--shadow-soft);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .concept-card .section-title {
+      text-align: center;
+      display: inline-block;
+      position: relative;
+    }
+
+    .concept-card .section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      margin: 10px auto 16px;
+      background: linear-gradient(90deg, var(--ember), var(--gold));
+      opacity: .8;
+      border-radius: 2px;
+    }
+
+    .concept-card p.lead {
+      text-align: center;
+      line-height: 2;
+      font-size: clamp(15px, 1.6vw, 17px);
+      color: var(--ink-soft);
+      margin-bottom: 24px;
+    }
+
+    .concept-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .concept-photo {
+      overflow: hidden;
+      border-radius: var(--radius);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .4);
+      position: relative;
+      z-index: 1;
+    }
+
+    .concept-photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius);
+      aspect-ratio: 4 / 3;
+      max-height: 360px;
+    }
+
+    .concept-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 70% 60%, rgba(178, 76, 40, .25), transparent 60%);
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    /* Menu cards */
+    .menu-grid {
+      display: grid;
+      gap: min(5vw, 22px);
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      background: #0f0f0f;
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      transform: translateY(8px);
+      opacity: 0;
+      transition: transform .6s ease, opacity .6s ease, box-shadow .3s ease;
+      position: relative;
+    }
+
+    .card.in {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .card:hover {
+      box-shadow: 0 18px 50px rgba(212, 175, 55, .15);
+    }
+
+    .card img {
+      aspect-ratio: 16/11;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 16px 16px 18px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: .1em;
+      border: 1px solid var(--line);
+      margin-bottom: 10px;
+      opacity: .9;
+    }
+
+    .price {
+      float: right;
+      opacity: .9;
+    }
+
+    /* Menu: filter tabs */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 14px 0 6px;
+    }
+
+    .tab {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .18);
+      cursor: pointer;
+      user-select: none;
+      font-size: 14px;
+      opacity: .9;
+    }
+
+    .tab.active {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 2px rgba(212, 175, 55, .16) inset;
+    }
+
+    /* Gallery */
+    .gallery {
+      overflow: auto;
+      scroll-snap-type: x mandatory;
+      display: flex;
+      gap: 12px;
+      padding-bottom: 6px;
+      margin-top: 8px;
+    }
+
+    .gallery::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .gallery::-webkit-scrollbar-thumb {
+      background: rgba(212, 175, 55, .35);
+      border-radius: 999px;
+    }
+
+    .frame {
+      flex: 0 0 80%;
+      max-width: 80%;
+      scroll-snap-align: center;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .06);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .frame img {
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    /* Access */
+    .access-grid {
+      display: grid;
+      gap: min(5vw, 28px);
+      grid-template-columns: 1.1fr .9fr;
+    }
+
+    .info {
+      background: #0f0f0f;
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: var(--radius);
+      padding: 18px 18px 14px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .kv {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 8px;
+      padding: 8px 0;
+    }
+
+    .kv b {
+      color: var(--ink);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      background:
+        linear-gradient(180deg, rgba(212, 175, 55, .05), transparent 40%),
+        #0e0e0e;
+      padding: 24px 0 36px;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .logo-mini {
+      font-family: "Cormorant Garamond", serif;
+      letter-spacing: .26em;
+      font-weight: 700;
+    }
+
+    .footer-bottom {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding-top: 10px;
+    }
+
+    /* Reveal on scroll */
+    .reveal {
+      transform: translateY(12px);
+      opacity: 0;
+      transition: .65s ease;
+    }
+
+    .reveal.in {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Form */
+    .form {
+      background: #0f0f0f;
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: var(--radius);
+      padding: clamp(16px, 2.6vw, 28px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    button.btn--ghost[type="reset"] {
+      color: #000;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin: 10px 0 6px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, .18);
+      background: #111;
+      color: var(--ink);
+      font-size: 16px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(255, 255, 255, .45);
+    }
+
+    .help {
+      font-size: 12px;
+      opacity: .8;
+      margin-top: 4px;
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    /* Modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      place-items: center;
+      z-index: 2000;
+      background: rgba(0, 0, 0, .6);
+    }
+
+    .modal.open {
+      display: grid;
+    }
+
+    .modal-card {
+      width: min(92%, 560px);
+      background: #0f0f0f;
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 16px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .55);
+      padding: 22px 18px;
+    }
+
+    .modal-card h3 {
+      margin: 6px 0 8px;
+      letter-spacing: .14em;
+    }
+
+    .modal-card p {
+      margin: 0 0 10px;
+      color: var(--ink-soft);
+    }
+
+    .modal-footer {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      margin-top: 12px;
+    }
+
+    /* =========================================
+       Responsive
+    ========================================= */
+
+    @media (max-width: 960px) {
+      .menu-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .concept-grid,
+      .access-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .concept-grid::before {
+        display: none;
+      }
+
+      .frame {
+        flex-basis: 92%;
+        max-width: 92%;
+      }
+
+      .hero-inner {
+        padding-left: 6%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      /* ナビ */
+      nav ul {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
+      }
+
+      .nav-mobile {
+        display: flex;
+      }
+
+      .brand-mark {
+        letter-spacing: .16em;
+      }
+
+      .kv {
+        grid-template-columns: 84px 1fr;
+      }
+
+      .section {
+        padding: 56px 0;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr;
+        max-width: 92%;
+        margin-inline: auto;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .gallery {
+        padding-bottom: 10px;
+      }
+
+      .frame {
+        flex-basis: 90%;
+        max-width: 90%;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      /* HERO：スマホ版 SANKOU 構図 */
+      .hero {
+        padding: 0;
+        min-height: 92vh;
+        align-items: flex-end;
+      }
+
+      .hero-inner {
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 12vh;
+        max-width: 100%;
+      }
+
+      .logo-ja {
+        font-size: 34px;
+        letter-spacing: .18em;
+      }
+
+      .logo-en {
+        font-size: 12px;
+        margin-top: 4px;
+        opacity: .85;
+      }
+
+      .hero-copy {
+        font-size: 13.5px;
+        line-height: 1.9;
+        margin-top: 12px;
+        opacity: .92;
+      }
+
+      .hero-cta {
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .btn {
+        padding: 10px 16px;
+        font-size: 13px;
+      }
+
+      .hero::before {
+        background: linear-gradient(
+            105deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.55) 22%,
+            rgba(0, 0, 0, 0.20) 45%,
+            rgba(0, 0, 0, 0.00) 75%
+          );
+      }
+
+      .hero-bg {
+        filter: brightness(1.08) contrast(1.05);
+      }
+    }
+
+    /* Keyboard focus */
+    .show-focus a:focus,
+    .show-focus button:focus,
+    .show-focus .btn:focus,
+    .show-focus input:focus,
+    .show-focus select:focus,
+    .show-focus textarea:focus {
+      outline: 2px dashed var(--gold);
+      outline-offset: 3px;
+    }
+
+    /* === Menu 炙りの温度感アップ系 ================= */
+
+    #menu .section-title::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 64px;
+      margin-top: 8px;
+      background: linear-gradient(90deg, var(--ember), var(--gold));
+      border-radius: 2px;
+      opacity: .9;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(178, 76, 40, .55), rgba(212, 175, 55, .55), transparent);
+      opacity: .4;
+      pointer-events: none;
+    }
+
+    .card:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 22px 60px rgba(212, 175, 55, .16);
+    }
+
+    .card .media {
+      position: relative;
+    }
+
+    .card .media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(120% 80% at 50% 20%, rgba(178, 76, 40, .16), transparent 60%),
+        linear-gradient(180deg, rgba(0, 0, 0, .05), rgba(0, 0, 0, .12));
+      opacity: .85;
+      mix-blend-mode: screen;
+      transition: opacity .35s ease;
+    }
+
+    .card:hover .media::after {
+      opacity: 1;
+    }
+
+    .card .media img {
+      transition: transform .6s cubic-bezier(.2, .7, .2, 1);
+    }
+
+    .card:hover .media img {
+      transform: scale(1.03);
+    }
+
+    .badge {
+      background: linear-gradient(180deg, rgba(178, 76, 40, .22), rgba(212, 175, 55, .12));
+      border-color: rgba(212, 175, 55, .45);
+      color: var(--ink);
+    }
+
+    .price {
+      color: var(--gold);
+      font-weight: 700;
+      text-shadow: 0 0 6px rgba(178, 76, 40, .25);
+    }
+
+    #access {
+      position: relative;
+      background:
+        radial-gradient(900px 600px at 80% 10%, rgba(178, 76, 40, .18), transparent 70%),
+        linear-gradient(180deg, #181818 0%, #0f0f0f 100%);
+      overflow: hidden;
+    }
+
+    #access::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 30% 20%, rgba(212, 175, 55, .05), transparent 70%),
+        url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-size: cover;
+      opacity: .35;
+      pointer-events: none;
+      mix-blend-mode: soft-light;
+    }
+
+    .info {
+      background:
+        radial-gradient(300px 200px at 60% 0%, rgba(212, 175, 55, .08), transparent 80%),
+        #111;
+      border: 1px solid rgba(255, 255, 255, .08);
+      box-shadow: 0 16px 48px rgba(212, 175, 55, .12);
+      backdrop-filter: blur(2px);
+      transition: all .6s ease;
+    }
+
+    .info:hover {
+      box-shadow: 0 20px 60px rgba(212, 175, 55, .2);
+      transform: translateY(-2px);
+    }
+
+    #access iframe {
+      border: 1px solid rgba(212, 175, 55, .25) !important;
+      box-shadow: 0 14px 40px rgba(212, 175, 55, .12);
+      filter: brightness(1.05) contrast(1.05);
+      transition: filter .4s ease, box-shadow .4s ease;
+    }
+
+    #access iframe:hover {
+      filter: brightness(1.15) contrast(1.1);
+      box-shadow: 0 22px 60px rgba(212, 175, 55, .18);
+    }
+
+    #access .section-title::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 60px;
+      margin-top: 6px;
+      background: linear-gradient(90deg, var(--ember), var(--gold));
+      border-radius: 2px;
+      opacity: .9;
+    }
+
+    /* 和紙の粒子 */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        radial-gradient(circle, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+      background-size: 3px 3px, 4px 4px;
+      mix-blend-mode: overlay;
+      opacity: 0.25;
+      animation: shimmer 12s linear infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        transform: translate(0, 0);
+        opacity: 0.25;
+      }
+
+      50% {
+        transform: translate(1%, 1%);
+        opacity: 0.35;
+      }
+
+      100% {
+        transform: translate(0, 0);
+        opacity: 0.25;
+      }
+    }
+
+    /* 熱気レイヤー（Hero上） */
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(1200px 800px at 50% 10%, rgba(178, 76, 40, .08), transparent 70%),
+        radial-gradient(800px 600px at 80% 90%, rgba(212, 175, 55, .06), transparent 70%);
+      mix-blend-mode: screen;
+      pointer-events: none;
+      z-index: 2;
+      opacity: .6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SVG Symbols -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <symbol id="logo-mark" viewBox="0 0 100 100">
+        <rect x="5" y="5" width="90" height="90" rx="14" ry="14" fill="#0f0f0f" stroke="#d4af37"
+          stroke-width="2" />
+        <path d="M50 18c10 9 18 18 18 30 0 9-6 16-18 22-12-6-18-13-18-22 0-12 8-21 18-30z" fill="#d4af37"
+          opacity=".85" />
+        <path d="M44 60h12v22h-12z" fill="#d4af37" opacity=".9" />
+        <circle cx="50" cy="56" r="4" fill="#121212" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <svg class="brand-badge" width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+          <use href="#logo-mark"></use>
+        </svg>
+        <div class="brand-mark">炙屋 一灯 <small>ABURIYA • ITTO</small></div>
+      </div>
+
+      <nav aria-label="Primary" class="nav-desktop">
+        <ul>
+          <li><a href="#top">トップ</a></li>
+          <li><a href="#concept">想い</a></li>
+          <li><a href="#menu">お品書き</a></li>
+          <li><a href="#access">店舗情報</a></li>
+          <li><a href="#reserve" class="btn btn--gold"><span class="shine"></span>予約する</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+        <span class="icon">☰</span><span>MENU</span>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="#top">トップ</a>
+      <a href="#concept">想い</a>
+      <a href="#menu">お品書き</a>
+      <a href="#access">店舗情報</a>
+      <a href="#reserve">予約する</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-logo reveal">
+        <div class="logo-ja">炙屋 一灯</div>
+        <div class="logo-en">ABURIYA • ITTO</div>
+        <p class="hero-copy">
+          湯気の向こうで、今夜も誰かの一日がほどけていく。<br>
+          少しにぎやかで、けれどうるさくない—そんな灯りのそばで。
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn--gold" href="#menu"><span class="shine"></span>お品書きを見る</a>
+          <a class="btn btn--ghost" href="#reserve"><span class="shine"></span>予約する</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sparks" aria-hidden="true"></div>
+  </section>
+
+  <!-- Concept -->
+  <section id="concept" class="section concept">
+    <div class="container concept-grid">
+      <div class="concept-card reveal">
+        <h2 class="section-title">一灯に込めた想い</h2>
+        <p class="lead">
+          一灯の灯りは、ただの明かりではない。<br>
+          心をほどき、言葉をいらなくする光。<br>
+          炙る香りが、記憶をやさしく焦がす。<br>
+          ここは、そんな夜を味わうための場所です。
+        </p>
+        <hr class="hr-glow">
+        <ul>
+          <li>高級すぎず、肩ひじ張らない上質。</li>
+          <li>炭火に限らず「旬を炙る」柔らかな解釈。</li>
+          <li>職人の手仕事と和の温度感。</li>
+        </ul>
+      </div>
+      <div class="concept-photo reveal">
+        <img src="../izakaya/sumibi (1).jpg" alt="炭火の近接写真">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">お品書き</h2>
+      <p class="lead reveal">看板の炙りと、季節で変わる一品をどうぞ。カテゴリで絞り込みできます。</p>
+
+      <div class="tabs reveal" role="tablist" aria-label="カテゴリ絞り込み">
+        <div class="tab active" data-cat="all" role="tab" aria-selected="true" tabindex="0">すべて</div>
+        <div class="tab" data-cat="aburi" role="tab" aria-selected="false" tabindex="0">炙り</div>
+        <div class="tab" data-cat="sashimi" role="tab" aria-selected="false" tabindex="0">刺身</div>
+        <div class="tab" data-cat="sakana" role="tab" aria-selected="false" tabindex="0">酒肴</div>
+        <div class="tab" data-cat="gohan" role="tab" aria-selected="false" tabindex="0">ご飯もの</div>
+        <div class="tab" data-cat="sweet" role="tab" aria-selected="false" tabindex="0">甘味</div>
+      </div>
+
+      <div class="menu-grid" id="menuGrid" style="margin-top:18px;"></div>
+
+      <div style="margin-top:18px;">
+        <a class="btn btn--gold" href="#reserve"><span class="shine"></span>予約・問い合わせへ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">店内の雰囲気</h2>
+      <p class="lead reveal">木のカウンター、行灯の灯り、静かな音楽。居心地の良さを大切にしています。</p>
+
+      <div class="gallery" style="margin-top:14px;">
+        <figure class="frame"><img src="tennai (1).jpg" alt="木のカウンター席"></figure>
+        <figure class="frame"><img src="tennai (2).jpg" alt="暖簾と外観"></figure>
+        <figure class="frame"><img src="tennai (3).jpg" alt="テーブル席"></figure>
+        <figure class="frame"><img src="tennai (4).jpg" alt="カウンターの行灯"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access -->
+  <section id="access" class="section concept">
+    <div class="container access-grid">
+      <div class="info reveal">
+        <h2 class="section-title">店舗情報</h2>
+        <div class="kv"><b>店名</b>
+          <div>炙屋 一灯（あぶりや いっとう）</div>
+        </div>
+        <div class="kv"><b>住所</b>
+          <div>〒000-0000 東京都〇〇区〇〇 1-2-3</div>
+        </div>
+        <div class="kv"><b>電話</b>
+          <div><a href="tel:000-000-0000">000-000-0000</a></div>
+        </div>
+        <div class="kv"><b>営業時間</b>
+          <div>17:00–24:00（L.O. 23:00）</div>
+        </div>
+        <div class="kv"><b>定休日</b>
+          <div>日曜（祝前日は営業）</div>
+        </div>
+        <div class="kv"><b>席数</b>
+          <div>カウンター8／テーブル16</div>
+        </div>
+        <hr class="hr-glow">
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn--gold" href="tel:000-000-0000"><span class="shine"></span>電話で予約</a>
+          <a class="btn btn--ghost" href="#"><span class="shine"></span>Instagram</a>
+          <a class="btn btn--ghost" href="#"><span class="shine"></span>X</a>
+        </div>
+      </div>
+      <div class="reveal"
+        style="border-radius: var(--radius); overflow:hidden; border:1px solid rgba(255,255,255,.06); box-shadow: var(--shadow-soft);">
+        <iframe title="Map" src="https://maps.google.com/maps?q=Tokyo&z=14&output=embed" width="100%"
+          height="380" style="border:0; display:block;" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reserve -->
+  <section id="reserve" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">ご予約</h2>
+      <p class="lead reveal">必要事項をご入力ください。入力内容は画面上で確認後、送信できます（デモ動作）。</p>
+
+      <form class="form reveal" id="reserveForm" novalidate>
+        <div class="grid-2">
+          <div>
+            <label for="name">お名前</label>
+            <input id="name" name="name" type="text" placeholder="例）山田 太郎" required maxlength="40" />
+          </div>
+          <div>
+            <label for="tel">お電話番号</label>
+            <input id="tel" name="tel" type="tel" inputmode="numeric" placeholder="例）09012345678" required
+              pattern="^0\d{9,10}$" />
+            <div class="help">ハイフンなし・10〜11桁</div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <label for="date">ご来店日</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div>
+            <label for="time">時間</label>
+            <select id="time" name="time" required>
+              <option value="">選択してください</option>
+              <option>17:00</option>
+              <option>17:30</option>
+              <option>18:00</option>
+              <option>18:30</option>
+              <option>19:00</option>
+              <option>19:30</option>
+              <option>20:00</option>
+              <option>20:30</option>
+              <option>21:00</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <label for="people">人数</label>
+            <select id="people" name="people" required>
+              <option value="">選択してください</option>
+              <option>1名</option>
+              <option>2名</option>
+              <option>3名</option>
+              <option>4名</option>
+              <option>5名</option>
+              <option>6名</option>
+              <option>7名</option>
+              <option>8名</option>
+            </select>
+          </div>
+          <div>
+            <label for="seat">席のご希望</label>
+            <select id="seat" name="seat">
+              <option>指定なし</option>
+              <option>カウンター</option>
+              <option>テーブル</option>
+              <option>半個室</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="note">ご要望</label>
+          <textarea id="note" name="note" rows="4" placeholder="アレルギー、サプライズ、苦手な食材など"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn--ghost" type="reset"><span class="shine"></span>リセット</button>
+          <button class="btn btn--gold" type="submit"><span class="shine"></span>入力内容を確認</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo-mini">ABURIYA • ITTO</div>
+        <div>© <span id="y"></span> Aburiya ITTO</div>
+      </div>
+      <div class="footer-bottom">
+        <span>特定商取引法に基づく表記</span> · <span>プライバシーポリシー</span> · <span>サイトマップ</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal" id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <div class="modal-card">
+      <h3 id="confirmTitle">ご入力内容の確認</h3>
+      <div id="confirmBody"></div>
+      <div class="modal-footer">
+        <button class="btn btn--ghost" id="cancelBtn"><span class="shine"></span>修正する</button>
+        <button class="btn btn--gold" id="submitBtn"><span class="shine"></span>この内容で送信</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="thanksModal" role="alertdialog" aria-modal="true" aria-labelledby="thanksTitle">
+    <div class="modal-card">
+      <h3 id="thanksTitle">送信が完了しました</h3>
+      <p>ご予約ありがとうございます。担当者より折り返しご連絡いたします。</p>
+      <div class="modal-footer">
+        <a class="btn btn--gold" href="#top" id="closeThanks"><span class="shine"></span>トップへ戻る</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    const io = new IntersectionObserver((ents) => {
+      ents.forEach(ent => {
+        if (ent.isIntersecting) {
+          ent.target.classList.add('in');
+          io.unobserve(ent.target);
+        }
+      })
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal,.card').forEach(el => io.observe(el));
+
+    const wrap = document.querySelector('.sparks');
+    for (let i = 0; i < 22; i++) {
+      const s = document.createElement('i');
+      s.className = 'spark';
+      s.style.setProperty('--x', Math.random() * 100 + '%');
+      s.style.setProperty('--dur', (9 + Math.random() * 6) + 's');
+      s.style.opacity = 0.6 + Math.random() * 0.3;
+      wrap.appendChild(s);
+    }
+
+    const menuData = [
+      { cat: 'aburi', name: '鯖の炙り 一灯仕立て', price: '880', desc: '皮の香ばしさが、酒を誘う。', img: 'yakisakana.jpg' },
+      { cat: 'aburi', name: '牛ももの炙り 香味葱だれ', price: '1280', desc: '旨みを閉じ込めた、肉の余熱。', img: 'gyuu.jpg' },
+      { cat: 'sakana', name: '炙り茄子のお浸し', price: '620', desc: '出汁が染みる、やさしい炙り。', img: 'nasu.jpg' },
+      { cat: 'sashimi', name: '本日のお造り 三種', price: '1480', desc: '旬の鮮魚、静かな旨み。', img: 'sasimi.jpg' },
+      { cat: 'sakana', name: '自家製ぬか漬け盛合せ', price: '540', desc: '塩気が酒を呼ぶ。', img: 'tukemono.jpg' },
+      { cat: 'gohan', name: '炙り鯛茶漬け', price: '980', desc: '香ばしい香りで〆る一杯。', img: 'otyazuke.jpg' },
+      { cat: 'gohan', name: '焼きおにぎり（二ヶ）', price: '520', desc: 'カリッと焦げ、湯気まで旨い。', img: 'yakioigiri.jpg' },
+      { cat: 'sweet', name: '黒胡麻アイス最中', price: '480', desc: '香ばしさと冷たさの余韻。', img: 'aisu.jpg' },
+      { cat: 'sweet', name: '抹茶わらび餅', price: '560', desc: 'もちとろに香る抹茶の風。', img: 'mattya.png' }
+    ];
+
+    const grid = document.getElementById('menuGrid');
+
+    function catLabel(c) {
+      return { aburi: '炙り', sashimi: '刺身', sakana: '酒肴', gohan: 'ご飯もの', sweet: '甘味' }[c] || 'その他';
+    }
+
+    function renderMenu(cat = 'all') {
+      grid.innerHTML = '';
+      const items = menuData.filter(m => cat === 'all' || m.cat === cat);
+      items.forEach((m, i) => {
+        const el = document.createElement('article');
+        el.className = 'card reveal';
+        el.setAttribute('data-cat', m.cat);
+        el.style.transitionDelay = (i * 60) + 'ms';
+        el.innerHTML = `
+          <div class="media">
+            <img src="${m.img}" alt="${m.name}">
+          </div>
+          <div class="card-body">
+            <span class="badge">${catLabel(m.cat)}</span>
+            <h3 style="margin:6px 0 6px;">
+              ${m.name}
+              <span class="price">¥${Number(m.price).toLocaleString()}</span>
+            </h3>
+            <p style="opacity:.9;">${m.desc}</p>
+          </div>`;
+        grid.appendChild(el);
+        io.observe(el);
+      });
+    }
+    renderMenu();
+
+    document.querySelectorAll('.tab').forEach(t => {
+      t.addEventListener('click', () => activateTab(t));
+      t.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activateTab(t); }
+      });
+    });
+
+    function activateTab(t) {
+      document.querySelectorAll('.tab').forEach(x => {
+        x.classList.remove('active');
+        x.setAttribute('aria-selected', 'false');
+      });
+      t.classList.add('active');
+      t.setAttribute('aria-selected', 'true');
+      renderMenu(t.dataset.cat);
+    }
+
+    const f = document.getElementById('reserveForm');
+    const confirmModal = document.getElementById('confirmModal');
+    const thanksModal = document.getElementById('thanksModal');
+    const confirmBody = document.getElementById('confirmBody');
+    const cancelBtn = document.getElementById('cancelBtn');
+    const submitBtn = document.getElementById('submitBtn');
+    const closeThanks = document.getElementById('closeThanks');
+
+    function openModal(m) { m.classList.add('open'); }
+    function closeModal(m) { m.classList.remove('open'); }
+
+    f.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!f.reportValidity()) return;
+
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const d = new Date(f.date.value);
+      if (d < today) { alert('ご来店日は本日以降をお選びください。'); return; }
+
+      const data = new FormData(f);
+      const obj = Object.fromEntries(data.entries());
+      confirmBody.innerHTML = `
+        <div class="info" style="margin-top:6px">
+          <div class="kv"><b>お名前</b><div>${escapeHTML(obj.name)}</div></div>
+          <div class="kv"><b>電話</b><div>${escapeHTML(obj.tel)}</div></div>
+          <div class="kv"><b>日時</b><div>${escapeHTML(obj.date)} ${escapeHTML(obj.time)}</div></div>
+          <div class="kv"><b>人数</b><div>${escapeHTML(obj.people)}</div></div>
+          <div class="kv"><b>席</b><div>${escapeHTML(obj.seat)}</div></div>
+          <div class="kv"><b>ご要望</b><div>${escapeHTML(obj.note || '（なし）')}</div></div>
+        </div>
+        <p class="help">※ 本デモでは実送信は行いません。画面上で完了通知を表示します。</p>
+      `;
+      openModal(confirmModal);
+    });
+
+    cancelBtn.addEventListener('click', () => closeModal(confirmModal));
+    submitBtn.addEventListener('click', () => {
+      closeModal(confirmModal);
+      openModal(thanksModal);
+      f.reset();
+    });
+    closeThanks.addEventListener('click', () => closeModal(thanksModal));
+
+    function escapeHTML(s) {
+      return String(s).replace(/[&<>"']/g, m => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;",
+        '"': "&quot;", "'": "&#39;"
+      }[m]));
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Tab') document.documentElement.classList.add('show-focus');
+    });
+
+    /* ハンバーガー制御 */
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+
+    if (navToggle && navMobile) {
+      navToggle.addEventListener('click', () => {
+        const open = navMobile.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        document.body.classList.toggle('nav-open', open);
+      });
+
+      navMobile.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          navMobile.classList.remove('open');
+          document.body.classList.remove('nav-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+
+</body>
+
+</html>
